@@ -15,10 +15,11 @@ while True:
                        "Type 'exit' to close program.\n\n").casefold().strip()
 
     if user_input.startswith("1"):
-        todo = user_input[2:]
+        todo = input("Add a todo: ")
         todos = functions.read_from_file()
         todos.append(todo + "\n")
         functions.write_to_file(todos)
+        print("\nTodo added!\n")
         functions.print_todos(todos)
     elif user_input.startswith("2"):
         try:
