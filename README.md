@@ -1,4 +1,4 @@
-# ToDoList
+# Todo List
 A simple todo list.
 
 Todos are saved and retrieved from a plain text file in files/todos.txt.
