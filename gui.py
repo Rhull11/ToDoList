@@ -2,22 +2,22 @@ from modules import functions
 import PySimpleGUI as gui
 
 label = gui.Text("Type in a todo")
-input_box = gui.InputText(tooltip="Enter todo", key="todo")
+input_box = gui.InputText(tooltip="Enter todo", key="todo", expand_x=True)
 add_todo_button = gui.Button("Add")
 todos_box = gui.Listbox(values=functions.read_from_file(),
                         key="items",
                         enable_events=True,
-                        size=[45,10])
+                        size=(45, 10), expand_x=True, expand_y=True)
 edit_button = gui.Button("Edit")
 complete_button = gui.Button("Complete")
 export_to_file_button = gui.Button("Export to file")
 
 window = gui.Window("Todo App",
-                    layout=[[label],
+                    layout=[[todos_box],
+                            [label],
                             [input_box],
-                            [todos_box],
                             [add_todo_button, edit_button, complete_button, export_to_file_button]],
-                    font=("Helvetica", 15))
+                    font=("Helvetica", 15), resizable=True)
 
 while True:
     event, values = window.read()
