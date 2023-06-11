@@ -1,14 +1,13 @@
 clean the fridge
-work on homework
-study Python
-clean the house
+Clean the patioclean the house
 bake a cake
 bake the cake
 drink coffee
-mow the lawn
-fix the door
-Clean the fridge
+mow the lawnClean the fridge
 update to Windows 11
 Master Python!
 Eat a cake!
 Go on a run
+
+
+
