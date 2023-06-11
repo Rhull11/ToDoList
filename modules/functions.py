@@ -3,6 +3,7 @@ import json
 
 from xlwt import Workbook
 
+FILEPATH = "files/todos.txt"
 
 def print_todos(items):
     """Prints the list of todos"""
@@ -31,14 +32,14 @@ def export_to_file(filetype, items):
         print("Export for file type is not found...")
 
 
-def read_from_file(filepath="files/todos.txt"):
+def read_from_file(filepath=FILEPATH):
     """Reads todos from .txt file"""
     with open(filepath, 'r') as file:
         items = file.readlines()
     return items
 
 
-def write_to_file(items, filepath="files/todos.txt"):
+def write_to_file(items, filepath=FILEPATH):
     """Writes todos to .txt file"""
     with open(filepath, 'w') as file:
         file.writelines(items)
