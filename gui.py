@@ -11,12 +11,13 @@ todos_box = gui.Listbox(values=functions.read_from_file(),
 edit_button = gui.Button("Edit")
 complete_button = gui.Button("Complete")
 export_to_file_button = gui.Button("Export to file")
+exit_button = gui.Button("Exit")
 
 window = gui.Window("Todo App",
                     layout=[[todos_box],
                             [label],
                             [input_box],
-                            [add_todo_button, edit_button, complete_button, export_to_file_button]],
+                            [add_todo_button, edit_button, complete_button, export_to_file_button, exit_button]],
                     font=("Helvetica", 15), resizable=True)
 
 
@@ -65,11 +66,14 @@ while True:
             todos.pop(todos.index(remove_todo))
             functions.write_to_file(todos)
             window["items"].update(values=todos)
+            window["todo"].update(value="")
         case "Export to file":
             todos = functions.read_from_file()
             save_to_file(todos)
         case "items":
             window["todo"].update(value=values["items"][0])
+        case "Exit":
+            window.close()
         case gui.WIN_CLOSED:
             break
 
