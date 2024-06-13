@@ -1,7 +1,8 @@
 # Todo List
-A simple todo list.
+A simple todo list application to manage your daily tasks.
 
 Todos are saved and retrieved from a plain text file in files/todos.txt.
 
-# Instructions
-Clone the repo and run in terminal/console. Simple as that!
+# Installation
+Download Windows: 
+[Downlaod Mac OS] (https://github.com/Rhull11/ToDoList/releases/download/macos/Todo.app.zip)
