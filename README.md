@@ -5,4 +5,4 @@ Todos are saved and retrieved from a plain text file in files/todos.txt.
 
 # Installation
 Download Windows </br>
-[Download Mac OS](https://github.com/Rhull11/ToDoList/releases/download/macos/Todo.app.zip)
+[Download Mac OS](https://github.com/Rhull11/ToDoList/releases/download/macos/TodoApp.dmg)
