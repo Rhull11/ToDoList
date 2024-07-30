@@ -1,7 +1,7 @@
 # Todo List
 A simple todo list application to manage your daily tasks.
 
-Todos are saved and retrieved from a plain text file in files/todos.txt.
+Todos are saved and retrieved from a plain text file.
 
 ## Windows Installation
 Download the [TodoApp.msi](https://github.com/Rhull11/ToDoList/releases/download/windows/TodoApp.msi) installer </br>
